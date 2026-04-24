@@ -3,7 +3,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion, useScroll, useTransform, AnimatePresence } from 'framer-motion';
 import Button from './Button';
-import BadmintonMatchAnimation from './BadmintonMatchAnimation';
 import { ArrowUpRight, ArrowRight } from 'lucide-react';
 
 const Typewriter = ({ text, delay = 0.05, speed = 0.05 }: { text: string, delay?: number, speed?: number }) => {
