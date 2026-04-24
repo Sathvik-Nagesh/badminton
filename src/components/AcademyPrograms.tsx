@@ -6,39 +6,46 @@ import { ArrowRight } from 'lucide-react';
 
 const programs = [
   {
-    title: 'Kinetic Foundation',
-    level: 'L1-ELEMENTARY',
-    desc: 'Mastering the fundamental asymmetric footwork and basic kinetic energy transfer.',
-    image: '/stitch/academy_programs_light.png',
-    tags: ['Core', 'Footwork', 'Endurance']
+    title: 'Kids Academy',
+    level: 'BEGINNER & INTERMEDIATE',
+    desc: 'Focusing on fundamentals, discipline, and physical agility in a fun, engaging environment for young athletes.',
+    image: '/kids_coaching.png',
+    tags: ['Ages 6-14', 'Fundamentals', 'Discipline']
   },
   {
-    title: 'Tactical Precision',
-    level: 'L2-INTERMEDIATE',
-    desc: 'High-speed decision making and precision stroke placement in match simulations.',
-    image: '/stitch/academy_advanced.png',
-    tags: ['Speed', 'Strategy', 'Precision']
+    title: 'Adults Batch',
+    level: 'ALL SKILL LEVELS',
+    desc: 'Perfect for working professionals looking to improve their game, stay fit, and join a vibrant sporting community.',
+    image: '/adults_coaching.png',
+    tags: ['Fitness', 'Technique', 'Social']
   },
   {
-    title: 'Elite Chassis',
-    level: 'L3-PROFESSIONAL',
-    desc: 'Maximum performance training. 1:1 coaching with national level tactical telemetry.',
-    image: '/stitch/elite_mastery_advanced.png',
-    tags: ['Mastery', 'Pro', 'Elite']
+    title: 'Advanced Training',
+    level: 'PROFESSIONAL / TOURNAMENT',
+    desc: 'Intensive sessions focused on match strategy, advanced strokes, and high-performance physical conditioning.',
+    image: '/advanced_coaching.png',
+    tags: ['Elite', 'Tournament Ready', 'Conditioning']
+  },
+  {
+    title: 'Personal Coaching',
+    level: '1:1 EXPERT ATTENTION',
+    desc: 'Customized training plans tailored to your specific goals, focusing on rapid skill acquisition and tactical mastery.',
+    image: '/personal_coaching.png',
+    tags: ['Tailored', '1:1 Focus', 'Fast Progress']
   }
 ];
 
 const AcademyPrograms = () => {
   return (
-    <section id="academy" style={{ padding: 'min(120px, 15vw) 24px', background: 'rgba(27, 67, 50, 0.02)', overflow: 'hidden', borderTop: '1px solid var(--glass-border)', borderBottom: '1px solid var(--glass-border)' }}>
+    <section id="programs" style={{ padding: 'min(120px, 15vw) 24px', background: 'rgba(27, 67, 50, 0.02)', overflow: 'hidden', borderTop: '1px solid var(--glass-border)', borderBottom: '1px solid var(--glass-border)' }}>
       <div style={{ maxWidth: '1400px', margin: '0 auto' }}>
         <div style={{ marginBottom: '80px', maxWidth: '800px' }}>
-          <span className="section-tag" style={{ display: 'inline-block' }}>High Precision Training</span>
+          <span className="section-tag" style={{ display: 'inline-block' }}>Master the Game</span>
             <h2 style={{ fontSize: 'clamp(2.5rem, 5vw, 3.5rem)', lineHeight: 1.1, marginBottom: '24px' }}>
-               Academy <span style={{ color: 'var(--accent)' }}>Programs</span>
+               Coaching <span style={{ color: 'var(--accent)' }}>Programs</span>
             </h2>
           <p style={{ fontSize: '1.1rem', color: 'var(--cream-muted)', maxWidth: '600px', lineHeight: 1.6 }}>
-            Our training methodologies are built on the principles of kinetic precision and asymmetric movement, ensuring every athlete reaches their peak potential.
+            Our structured coaching methodology is designed to build champions. From basic fundamentals to elite match strategies, we cover every aspect of the game.
           </p>
         </div>
 

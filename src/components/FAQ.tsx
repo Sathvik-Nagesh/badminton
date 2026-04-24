@@ -6,24 +6,24 @@ import { Plus, Minus, ChevronDown } from 'lucide-react';
 
 const FAQS = [
   {
-    question: "What is the mandatory footwear protocol?",
-    answer: "To maintain our BWF Grade-A wooden surfaces, all athletes must wear non-marking court shoes. Regular outdoor sports shoes are strictly prohibited within the tactical chambers."
+    question: "Do you offer trial classes for new students?",
+    answer: "Yes! We offer a complimentary trial session for both kids and adults. It's a great way for you to experience our coaching style and for us to assess your current skill level."
   },
   {
-    question: "How does the 'Chrono Slot' booking system work?",
-    answer: "Our system operates on a high-precision temporal grid. Slots are available in 60-minute blocks. Members have a 14-day advance booking window, while guests have a 48-hour tactical window."
+    question: "What is the right age to start badminton coaching?",
+    answer: "We recommend starting as early as 6 years old. At this age, children can begin developing hand-eye coordination and basic footwork. However, it's never too late for adults to start as well!"
   },
   {
-    question: "Are private coaching sessions available for all levels?",
-    answer: "Yes. Our Academy Protocols range from L1-Foundation to L3-Elite Chassis. Each program is calibrated to the athlete's current kinetic performance and long-term diagnostic goals."
+    question: "What are the timings for coaching batches?",
+    answer: "We have multiple batches throughout the day. Kids batches usually run in the evenings (4 PM - 7 PM), while adult batches are available in the early mornings and late evenings to accommodate working professionals."
   },
   {
-    question: "What is the guest policy for Elite Members?",
-    answer: "Elite Members can bring up to 3 guests per session. All guests must be synchronized with the membership ID at the Command Center upon arrival."
+    question: "Do I need to bring my own racket for the trial class?",
+    answer: "While we recommend having your own gear, we provide rackets for trial classes. You just need to bring non-marking court shoes and comfortable sports attire."
   },
   {
-    question: "Can I upgrade my membership tier mid-cycle?",
-    answer: "Synchronized upgrades are available via the Command Center or through our WhatsApp Assistant. Pro-rated adjustments to your metabolic and access tiers will be applied instantaneously."
+    question: "Is there personal 1-on-1 coaching available?",
+    answer: "Yes, we offer personalized 1-on-1 coaching sessions for players who want rapid improvement or focused training on specific aspects of their game."
   }
 ];
 
@@ -127,10 +127,10 @@ const FAQ = () => {
       <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
         <div style={{ marginBottom: '80px', textAlign: 'center' }}>
           <h2 style={{ fontSize: 'clamp(2.5rem, 5vw, 4.5rem)', fontWeight: 950, marginBottom: '24px', letterSpacing: '-0.04em' }}>
-             FREQUENTLY <span style={{ color: 'var(--accent)' }}>ASKED</span> QUESTIONS
+             COMMON <span style={{ color: 'var(--accent)' }}>QUESTIONS</span>
           </h2>
           <p style={{ color: 'var(--cream-muted)', fontSize: '1.1rem', maxWidth: '600px', margin: '0 auto', opacity: 0.6 }}>
-             Calibrating your expectations for the elite AeroElite experience.
+             Everything you need to know about joining A+ Badminton Academy.
           </p>
         </div>
 

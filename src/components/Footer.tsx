@@ -7,30 +7,30 @@ import Button from './Button';
 
 const footerLinks = [
   {
-    title: 'Experience',
+    title: 'Academy',
     links: [
-      { name: 'Chamber Selection', href: '#booking' },
-      { name: 'Academy Protocol', href: '#academy' },
-      { name: 'Infrastructure', href: '#facilities' },
-      { name: 'Elite Tiers', href: '#pricing' }
+      { name: 'Home', href: '#home' },
+      { name: 'Programs', href: '#programs' },
+      { name: 'About Us', href: '#about' },
+      { name: 'Facilities', href: '#facilities' }
     ]
   },
   {
-    title: 'Ecosystem',
+    title: 'Community',
     links: [
-      { name: 'Athletic Telemetry', href: '#' },
-      { name: 'Kinetic Lab', href: '#' },
-      { name: 'Recovery Lounge', href: '#' },
-      { name: 'Pro-Shop Chassis', href: '#' }
+      { name: 'Reviews', href: '#reviews' },
+      { name: 'Gallery', href: '#' },
+      { name: 'Tournaments', href: '#' },
+      { name: 'Events', href: '#' }
     ]
   },
   {
-    title: 'Legal / Archive',
+    title: 'Support',
     links: [
-      { name: 'Terms of Access', href: '#' },
-      { name: 'Data Protocol', href: '#' },
-      { name: 'Brand Identity', href: '#' },
-      { name: 'Global Network', href: '#' }
+      { name: 'Contact', href: '#contact' },
+      { name: 'FAQs', href: '#faq' },
+      { name: 'Privacy Policy', href: '#' },
+      { name: 'Terms', href: '#' }
     ]
   }
 ];
@@ -57,13 +57,13 @@ const Footer = () => {
               <div style={{ width: '40px', height: '40px', background: 'var(--accent)', borderRadius: '12px', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--accent-foreground)' }}>
                 <Globe size={22} />
               </div>
-              <span style={{ fontWeight: 950, fontSize: '1.5rem', letterSpacing: '-0.04em', color: 'var(--foreground)' }}>AEROELITE</span>
+              <span style={{ fontWeight: 950, fontSize: '1.5rem', letterSpacing: '-0.04em', color: 'var(--foreground)' }}>A+ BADMINTON</span>
             </div>
             <p style={{ maxWidth: '340px', lineHeight: 1.6, fontSize: '0.95rem', color: 'var(--cream-muted)', marginBottom: '32px' }}>
-              Redefining the elite badminton environment through kinetic precision and architectural luxury.
+              Training champions through discipline, passion, and expert coaching since 2014. Join Bengaluru's premier badminton academy.
             </p>
             <div style={{ display: 'flex', gap: '12px' }}>
-               {[Globe, Share2, Zap].map((Icon, i) => (
+               {[Globe, Share2, Phone].map((Icon, i) => (
                  <motion.a 
                     key={i}
                     href="#" 
@@ -101,29 +101,42 @@ const Footer = () => {
           {/* Contact Col */}
           <div style={{ minWidth: '200px' }}>
             <h4 style={{ fontSize: '0.7rem', fontWeight: 950, color: 'var(--accent)', textTransform: 'uppercase', letterSpacing: '0.2em', marginBottom: '24px' }}>
-              Inbound Access
+              Contact Us
             </h4>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
+               <a 
+                 href="https://maps.app.goo.gl/H6CauGXTtWR73Wt99" 
+                 target="_blank" 
+                 rel="noopener noreferrer"
+                 style={{ display: 'flex', alignItems: 'flex-start', gap: '10px', color: 'var(--cream-muted)', fontSize: '0.9rem', lineHeight: 1.5, textDecoration: 'none' }}
+                 className="interactive"
+               >
+                 <MapPin size={16} color="var(--accent)" style={{ marginTop: '4px' }} />
+                 3rd Main Road, Laggere Main road, 1st Cross Rd, Bengaluru, 560058
+               </a>
+               <div style={{ display: 'flex', alignItems: 'center', gap: '10px', color: 'var(--cream-muted)', fontSize: '0.9rem' }}>
+                 <Phone size={16} color="var(--accent)" />
+                 +91 96866 65516
+               </div>
                <div style={{ display: 'flex', alignItems: 'center', gap: '10px', color: 'var(--cream-muted)', fontSize: '0.9rem' }}>
                  <Mail size={16} color="var(--accent)" />
-                 protocol@aeroelite.co
+                 contact@aplusbadminton.com
                </div>
-               <div style={{ display: 'flex', alignItems: 'center', gap: '10px', color: 'var(--cream-muted)', fontSize: '0.9rem' }}>
-                 <MapPin size={16} color="var(--accent)" />
-                 Neutral Zone, District 9
-               </div>
-               <Button 
-                 type="outline" 
-                 onClick={() => {
-                   const msg = encodeURIComponent("Hi AeroElite! I'm reaching out via the Command Center. I'd like to learn more about your elite badminton architectural systems.");
-                   window.open(`https://wa.me/911234567890?text=${msg}`, '_blank');
-                 }}
-                 style={{ borderRadius: '100px', padding: '12px 20px', fontSize: '0.75rem', width: 'max-content' }}
-               >
-                  Open Command Center
-               </Button>
             </div>
           </div>
+        </div>
+
+        {/* Google Map Embed */}
+        <div style={{ width: '100%', height: '300px', borderRadius: '24px', overflow: 'hidden', marginBottom: '60px', border: '1px solid var(--glass-border)' }}>
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.245464191079!2d77.5255474!3d13.0199748!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae3d84b0000001%3A0x7d0a6c0c5d5e5e5e!2sA%2B%20Badminton%20Academy!5e0!3m2!1sen!2sin!4v1714000000000!5m2!1sen!2sin" 
+            width="100%" 
+            height="100%" 
+            style={{ border: 0 }} 
+            allowFullScreen={true} 
+            loading="lazy" 
+            referrerPolicy="no-referrer-when-downgrade"
+          ></iframe>
         </div>
 
         {/* Bottom Bar */}
@@ -138,10 +151,9 @@ const Footer = () => {
           fontWeight: 700,
           opacity: 0.6
         }}>
-          <div>© 2026 AEROELITE INTELLIGENCE SYSTEMS.</div>
+          <div>© 2026 A+ BADMINTON ACADEMY. ALL RIGHTS RESERVED.</div>
           <div style={{ display: 'flex', gap: '24px' }}>
-            <span>V2.04.2-STABLE</span>
-            <span style={{ color: 'var(--accent)' }}>UPTIME: 99.9%</span>
+            <span>BENGALURU, INDIA</span>
           </div>
         </div>
       </div>

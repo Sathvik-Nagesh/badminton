@@ -6,43 +6,43 @@ import { Star, Quote } from 'lucide-react';
 
 const testimonials = [
   {
-    name: 'Arjun M.',
-    role: 'National Ranking #4',
-    text: 'The BWF-spec surfaces here are unparalleled. My footwork precision increased by 15% in just 3 weeks.',
-    avatar: 'AM'
+    name: 'Rahul Sharma',
+    role: 'Adults Batch',
+    text: 'Priyadarshan Sir focuses heavily on fundamentals. My footwork and stamina have improved significantly since I joined.',
+    avatar: 'RS'
   },
   {
-    name: 'Sara Khan',
+    name: 'Anjali Gupta',
+    role: 'Parent of Junior Student',
+    text: 'A+ Badminton Academy is the best place for kids. The discipline and personal attention they give to each child is remarkable.',
+    avatar: 'AG'
+  },
+  {
+    name: 'Vikram Singh',
+    role: 'Advanced Training',
+    text: 'The best coaching center in Bengaluru! The environment is very friendly yet professional. Highly recommended for serious players.',
+    avatar: 'VS'
+  },
+  {
+    name: 'Suresh Kumar',
     role: 'Elite Member',
-    text: 'AeroElite isn’t just a club; it’s a high-performance laboratory. The atmosphere is purely kinetic.',
+    text: 'Great infrastructure and excellent coaching. The fitness sessions are intensive and really help in match performance.',
     avatar: 'SK'
   },
   {
-    name: 'David Low',
-    role: 'Head of Coaching',
-    text: 'Finally, a facility that treats badminton with the architectural respect it deserves.',
-    avatar: 'DL'
-  },
-  {
-    name: 'Elena R.',
-    role: 'Professional Circuit',
-    text: 'The zero-turbulence airflow is a game changer. The shuttlecock trajectory is 100% predictable.',
-    avatar: 'ER'
-  },
-  {
-    name: 'Kevin J.',
-    role: 'Junior Champion',
-    text: 'Training here feels like years ahead of any other academy. The tech integration is insane.',
-    avatar: 'KJ'
+    name: 'Megha R.',
+    role: 'Beginner Batch',
+    text: 'Started as a complete beginner. The coaches are very patient and explain the techniques clearly. Love the atmosphere!',
+    avatar: 'MR'
   }
 ];
 
 const TestimonialMarquee = () => {
   return (
     <section style={{ padding: '80px 0', background: 'var(--background)', overflow: 'hidden' }}>
-      <div style={{ textAlign: 'center', marginBottom: '60px' }}>
-        <span className="section-tag">Social Proof</span>
-        <h2 style={{ fontSize: '2.5rem', fontWeight: 950 }}>Elite Endorsements</h2>
+      <div id="reviews" style={{ textAlign: 'center', marginBottom: '60px' }}>
+        <span className="section-tag">4.7 ★ (205 Google Reviews)</span>
+        <h2 style={{ fontSize: '2.5rem', fontWeight: 950 }}>What Our <span style={{ color: 'var(--accent)' }}>Students</span> Say</h2>
       </div>
 
       <div style={{ display: 'flex', position: 'relative', width: '100%' }}>

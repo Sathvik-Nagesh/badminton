@@ -44,11 +44,6 @@ const FloatWhatsApp = () => {
     };
   }, [isVisible, showTooltip]);
 
-  const handleChat = () => {
-    const msg = encodeURIComponent("Hi AeroElite! I'm browsing the atelier and have a few questions about the booking process. Could you assist me?");
-    window.open(`https://wa.me/911234567890?text=${msg}`, '_blank');
-  };
-
   return (
     <div style={{ position: 'fixed', bottom: '24px', right: '24px', zIndex: 2000, display: 'flex', alignItems: 'center', gap: '16px' }}>
       {/* Help Bubble Expansion */}
@@ -71,7 +66,7 @@ const FloatWhatsApp = () => {
               pointerEvents: 'none'
             }}
           >
-            Need help booking?
+            Join Coaching?
           </motion.div>
         )}
       </AnimatePresence>
@@ -93,7 +88,10 @@ const FloatWhatsApp = () => {
             }}
           >
             <motion.button
-              onClick={handleChat}
+              onClick={() => {
+                const msg = encodeURIComponent("Hi A+ Badminton Academy! I'm interested in joining the coaching programs. Could you share more details?");
+                window.open(`https://wa.me/919686665516?text=${msg}`, '_blank');
+              }}
               whileHover={{ scale: 1.08 }}
               whileTap={{ scale: 0.95 }}
               animate={{

@@ -24,11 +24,12 @@ const Navbar = () => {
   }, []);
 
   const navItems = [
-    { name: 'Academy', href: '#academy' },
-    { name: 'Facilities', href: '#facilities' },
-    { name: 'Membership', href: '#pricing' },
-    { name: 'Location', href: '#location' },
-    { name: 'System', href: '#booking' },
+    { name: 'Home', href: '#home' },
+    { name: 'Programs', href: '#programs' },
+    { name: 'Gallery', href: '#gallery' },
+    { name: 'Reviews', href: '#reviews' },
+    { name: 'About', href: '#about' },
+    { name: 'Contact', href: '#contact' },
   ];
 
   const isMobile = windowWidth < 960;
@@ -86,7 +87,7 @@ const Navbar = () => {
             <Globe size={16} strokeWidth={3} />
           </div>
           <span style={{ fontWeight: 950, fontSize: '1.1rem', letterSpacing: '-0.06em', color: 'var(--foreground)' }}>
-            AEROELITE
+            A+ BADMINTON
           </span>
         </div>
 
@@ -162,8 +163,8 @@ const Navbar = () => {
 
           <div 
             onClick={() => {
-              const msg = encodeURIComponent("Hi AeroElite! I'd like to book a tactical unit session. What are the available slots for today?");
-              window.open(`https://wa.me/911234567890?text=${msg}`, '_blank');
+              const msg = encodeURIComponent("Hi A+ Badminton Academy! I'm interested in joining the coaching programs. Could you share more details?");
+              window.open(`https://wa.me/919686665516?text=${msg}`, '_blank');
             }}
             style={{ 
               background: 'var(--accent)', 
@@ -183,7 +184,7 @@ const Navbar = () => {
             }}
             className="interactive"
           >
-            RESERVE_UNIT <ArrowRight size={14} />
+            JOIN COACHING <ArrowRight size={14} />
           </div>
         </div>
       </div>
@@ -240,7 +241,7 @@ const Navbar = () => {
                     fontSize: '0.8rem',
                   }}
                 >
-                  RESERVE NOW
+                  JOIN COACHING
                 </button>
               </div>
             </div>

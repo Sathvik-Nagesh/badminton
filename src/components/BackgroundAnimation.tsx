@@ -10,20 +10,7 @@ const BackgroundAnimation = () => {
     setMounted(true);
   }, []);
 
-  const leafAnimations = React.useMemo(() => [...Array(6)].map(() => ({
-    opacity: [0, 0.08, 0],
-    scale: [1, 1.2, 1],
-    x: [Math.random() * 100 + '%', Math.random() * 100 + '%'],
-    y: [Math.random() * 100 + '%', Math.random() * 100 + '%']
-  })), []);
 
-  const shuttlecockPositions = React.useMemo(() => [...Array(12)].map(() => ({
-    initialX: Math.random() * 100,
-    initialY: Math.random() * 100,
-    duration: 15 + Math.random() * 20,
-    delay: Math.random() * -20,
-    rotate: Math.random() * 360
-  })), []);
 
   if (!mounted) {
     return (
@@ -78,42 +65,7 @@ const BackgroundAnimation = () => {
         }}
       />
 
-      {/* 2. Floating Kinetic Shuttlecocks (Reduced Count for Performance) */}
-      {shuttlecockPositions.slice(0, 6).map((pos, i) => (
-        <motion.div
-           key={`shuttle-${i}`}
-           initial={{ 
-             opacity: 0, 
-             x: `${pos.initialX}%`, 
-             y: `${pos.initialY}%`,
-             rotate: pos.rotate 
-           }}
-           animate={{ 
-             y: [`${pos.initialY}%`, `${pos.initialY - 10}%`, `${pos.initialY}%`],
-             opacity: [0, 0.05, 0],
-             rotate: [pos.rotate, pos.rotate + 20, pos.rotate]
-           }}
-           transition={{ 
-             duration: pos.duration, 
-             repeat: Infinity, 
-             delay: pos.delay,
-             ease: 'linear' 
-           }}
-           style={{
-             position: 'absolute',
-             width: '60px',
-             height: '60px',
-             color: 'var(--accent)',
-             filter: 'blur(1px)',
-             willChange: 'transform'
-           }}
-        >
-          <svg viewBox="0 0 40 40" fill="currentColor">
-            <path d="M20 5 L28 25 L12 25 Z" opacity="0.2" />
-            <circle cx="20" cy="30" r="3" />
-          </svg>
-        </motion.div>
-      ))}
+
 
       {/* 3. Soft Botanical Shadows (Optimized) */}
       {[...Array(3)].map((_, i) => (

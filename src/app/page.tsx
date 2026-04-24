@@ -6,15 +6,17 @@ import SchematicBackground from '@/components/SchematicBackground';
 import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
 import KineticTicker from '@/components/KineticTicker';
-import BookingSystem from '@/components/BookingSystem';
 import AcademyPrograms from '@/components/AcademyPrograms';
 import TestimonialMarquee from '@/components/TestimonialMarquee';
-import Facilities from '@/components/Facilities';
-import LocationSection from '@/components/LocationSection';
-import PerksAndTiers from '@/components/PerksAndTiers';
+import AboutSection from '@/components/AboutSection';
+import ContactForm from '@/components/ContactForm';
+import Gallery from '@/components/Gallery';
 import FAQ from '@/components/FAQ';
+import Reveal from '@/components/Reveal';
+import BottomCTA from '@/components/BottomCTA';
 import FloatWhatsApp from '@/components/FloatWhatsApp';
 import Footer from '@/components/Footer';
+
 export default function Home() {
   return (
     <main style={{ minHeight: '100vh', position: 'relative' }}>
@@ -26,30 +28,36 @@ export default function Home() {
       <KineticTicker />
 
       <div id="experience" style={{ position: 'relative', zIndex: 1, background: 'transparent' }}>
-        <div key="booking-section">
-          <div style={{ width: '1px', height: '100px', background: 'var(--accent)', margin: '0 auto', opacity: 0.3 }} />
-          <BookingSystem />
-        </div>
+        <Reveal>
+          <div key="programs-section">
+            <AcademyPrograms />
+          </div>
+        </Reveal>
 
-        <div key="academy-section">
-          <AcademyPrograms />
-        </div>
+        <Reveal delay={0.3}>
+          <AboutSection />
+        </Reveal>
 
-        <TestimonialMarquee />
+        <Reveal>
+          <TestimonialMarquee />
+        </Reveal>
 
-        <div key="facilities-section">
-          <Facilities />
-        </div>
+        <Reveal>
+          <Gallery />
+        </Reveal>
 
-        <div key="membership-section">
-          <PerksAndTiers />
-        </div>
+        <Reveal>
+          <ContactForm />
+        </Reveal>
       </div>
 
-      <div key="location-section">
-        <FAQ />
-        <LocationSection />
-      </div>
+      <Reveal>
+        <div key="location-section">
+          <FAQ />
+        </div>
+      </Reveal>
+
+      <BottomCTA />
 
       <FloatWhatsApp />
       <Footer />

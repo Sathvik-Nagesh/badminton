@@ -64,14 +64,14 @@ const Button = ({
 
   const secondaryStyles = {
     ...baseStyles,
-    background: 'transparent',
+    background: 'rgba(0,0,0,0)',
     color: 'var(--foreground)',
     border: '1px solid var(--glass-border)',
   };
 
   const outlineStyles = {
     ...baseStyles,
-    background: 'transparent',
+    background: 'rgba(0,0,0,0)',
     border: '2px solid var(--accent)',
     color: 'var(--accent)',
   };
