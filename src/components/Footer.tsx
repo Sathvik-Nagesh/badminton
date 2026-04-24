@@ -19,9 +19,9 @@ const footerLinks = [
     title: 'Community',
     links: [
       { name: 'Reviews', href: '#reviews' },
-      { name: 'Gallery', href: '#' },
-      { name: 'Tournaments', href: '#' },
-      { name: 'Events', href: '#' }
+      { name: 'Gallery', href: '#gallery' },
+      { name: 'Tournaments', href: '#programs' },
+      { name: 'Events', href: '#programs' }
     ]
   },
   {
@@ -29,8 +29,8 @@ const footerLinks = [
     links: [
       { name: 'Contact', href: '#contact' },
       { name: 'FAQs', href: '#faq' },
-      { name: 'Privacy Policy', href: '#' },
-      { name: 'Terms', href: '#' }
+      { name: 'Privacy Policy', href: '#contact' },
+      { name: 'Terms', href: '#contact' }
     ]
   }
 ];
@@ -122,6 +122,10 @@ const Footer = () => {
                  <Mail size={16} color="var(--accent)" />
                  contact@aplusbadminton.com
                </div>
+               <div style={{ display: 'flex', alignItems: 'center', gap: '10px', color: 'var(--cream-muted)', fontSize: '0.9rem' }}>
+                 <Zap size={16} color="var(--accent)" />
+                 Open Daily: 5:00 AM - 11:00 PM
+               </div>
             </div>
           </div>
         </div>
@@ -129,6 +133,8 @@ const Footer = () => {
         {/* Google Map Embed */}
         <div style={{ width: '100%', height: '300px', borderRadius: '24px', overflow: 'hidden', marginBottom: '60px', border: '1px solid var(--glass-border)' }}>
           <iframe 
+            className="map-embed"
+            title="A+ Badminton Academy Location"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.245464191079!2d77.5255474!3d13.0199748!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae3d84b0000001%3A0x7d0a6c0c5d5e5e5e!2sA%2B%20Badminton%20Academy!5e0!3m2!1sen!2sin!4v1714000000000!5m2!1sen!2sin" 
             width="100%" 
             height="100%" 

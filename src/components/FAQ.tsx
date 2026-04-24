@@ -18,6 +18,14 @@ const FAQS = [
     answer: "We have multiple batches throughout the day. Kids batches usually run in the evenings (4 PM - 7 PM), while adult batches are available in the early mornings and late evenings to accommodate working professionals."
   },
   {
+    question: "What do I need to bring for my first class?",
+    answer: "Please bring a pair of non-marking indoor sports shoes, a water bottle, and a sports towel. If you don't have a racket, we provide them for trial sessions."
+  },
+  {
+    question: "Do you have batches for working professionals?",
+    answer: "Yes! We have early morning batches (5 AM - 7 AM) and late evening batches (6:30 PM - 8:30 PM) specifically designed for working professionals."
+  },
+  {
     question: "Do I need to bring my own racket for the trial class?",
     answer: "While we recommend having your own gear, we provide rackets for trial classes. You just need to bring non-marking court shoes and comfortable sports attire."
   },

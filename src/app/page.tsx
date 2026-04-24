@@ -9,11 +9,14 @@ import KineticTicker from '@/components/KineticTicker';
 import AcademyPrograms from '@/components/AcademyPrograms';
 import TestimonialMarquee from '@/components/TestimonialMarquee';
 import AboutSection from '@/components/AboutSection';
+import WhyUs from '@/components/WhyUs';
+import Timetable from '@/components/Timetable';
 import ContactForm from '@/components/ContactForm';
 import Gallery from '@/components/Gallery';
 import FAQ from '@/components/FAQ';
 import Reveal from '@/components/Reveal';
 import BottomCTA from '@/components/BottomCTA';
+import ScrollToTop from '@/components/ScrollToTop';
 import FloatWhatsApp from '@/components/FloatWhatsApp';
 import Footer from '@/components/Footer';
 
@@ -38,6 +41,10 @@ export default function Home() {
           <AboutSection />
         </Reveal>
 
+        <WhyUs />
+
+        <Timetable />
+
         <Reveal>
           <TestimonialMarquee />
         </Reveal>
@@ -59,6 +66,7 @@ export default function Home() {
 
       <BottomCTA />
 
+      <ScrollToTop />
       <FloatWhatsApp />
       <Footer />
     </main>

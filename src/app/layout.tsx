@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import "./globals.css";
 import BackgroundAnimation from "@/components/BackgroundAnimation";
+import CustomCursor from "@/components/CustomCursor";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -26,6 +27,53 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className} style={{ margin: 0, padding: 0 }}>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "SportsActivityLocation",
+              "name": "A+ Badminton Academy",
+              "image": "https://aplusbadminton.com/hero.png",
+              "@id": "https://aplusbadminton.com",
+              "url": "https://aplusbadminton.com",
+              "telephone": "+919686665516",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "3rd Main Road, Laggere Main road, 1st Cross Rd",
+                "addressLocality": "Bengaluru",
+                "postalCode": "560058",
+                "addressCountry": "IN"
+              },
+              "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": 13.0199748,
+                "longitude": 77.5255474
+              },
+              "openingHoursSpecification": [
+                {
+                  "@type": "OpeningHoursSpecification",
+                  "dayOfWeek": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                    "Sunday"
+                  ],
+                  "opens": "05:00",
+                  "closes": "23:00"
+                }
+              ],
+              "sameAs": [
+                "https://www.facebook.com/aplusbadminton",
+                "https://www.instagram.com/aplusbadminton"
+              ]
+            })
+          }}
+        />
+        <CustomCursor />
         <BackgroundAnimation />
         {children}
       </body>

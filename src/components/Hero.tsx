@@ -39,7 +39,7 @@ const Hero = () => {
   return (
     <section id="home" style={{ 
       minHeight: '100vh', 
-      padding: 'min(160px, 20vw) 5% 100px', 
+      padding: 'clamp(140px, 20vw, 220px) 5% 100px', 
       background: 'var(--background)',
       overflow: 'hidden',
       position: 'relative'
